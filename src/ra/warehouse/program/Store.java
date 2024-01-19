@@ -134,7 +134,6 @@ public class Store {
                 return category;
             }
         }
-        // If the category is not found, you might want to handle this case accordingly.
         return null;
     }
 
@@ -332,7 +331,6 @@ public class Store {
 
         productsByCategory.forEach((categoryId, categoryProducts) -> {
             Category category = getCategoryById(categoryId);
-            assert category != null;
             System.out.println("Danh mục: " + category.getName());
 
             categoryProducts.stream()
